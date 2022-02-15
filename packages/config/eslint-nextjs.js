@@ -1,4 +1,5 @@
 module.exports = {
+  ...require('./eslint-base'),
   env: {
     browser: true,
     node: true,
@@ -44,23 +45,6 @@ module.exports = {
       },
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
-      rules: {
-        'import/no-extraneous-dependencies': [
-          'off',
-          { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
-        ],
-      },
     },
-  ],
-  ignorePatterns: [
-    '**/*.js',
-    '**/*.json',
-    'node_modules',
-    'public',
-    'styles',
-    '.next',
-    'coverage',
-    'dist',
-    '.turbo',
   ],
 };
