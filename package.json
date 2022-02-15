@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "test": "echo \"OK!\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{ts,tsx}\""
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1"
   }
 }
