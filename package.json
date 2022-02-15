@@ -5,7 +5,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "test": "echo \"OK!\"",
+    "test": "turbo run test",
     "lint": "turbo run lint",
     "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\"",
     "prepare": "husky install"

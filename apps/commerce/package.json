@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
+    "test": "jest --coverage",
     "build": "next build",
     "start": "next star",
     "lint": "next lint"
@@ -17,6 +18,12 @@
     "@types/react": "^17.0.39",
     "config": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "jest": "^27.5.1"
   }
 }
