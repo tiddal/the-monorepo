@@ -1,5 +1,4 @@
 module.exports = {
-  ...require('./eslint-base'),
   env: {
     browser: true,
     node: true,
@@ -18,7 +17,7 @@ module.exports = {
       rootDir: ['apps/*/', 'packages/*/'],
     },
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', 'tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       typescript: {
@@ -28,11 +27,13 @@ module.exports = {
     },
   },
   rules: {
-    'no-console': 'error',
+    'no-console': 2,
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       2,
-      { namedComponents: 'arrow-function' },
+      {
+        namedComponents: 'arrow-function',
+      },
     ],
     '@next/next/no-html-link-for-pages': 'off',
   },
@@ -43,6 +44,23 @@ module.exports = {
       },
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
       extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'off',
+          { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
+        ],
+      },
     },
+  ],
+  ignorePatterns: [
+    '**/*.js',
+    '**/*.json',
+    'node_modules',
+    'public',
+    'styles',
+    '.next',
+    'coverage',
+    'dist',
+    '.turbo',
   ],
 };
