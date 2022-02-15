@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev",
     "test": "echo \"OK!\"",
     "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\"",
     "prepare": "husky install"
