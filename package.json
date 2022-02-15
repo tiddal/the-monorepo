@@ -5,10 +5,11 @@
   "scripts": {
     "test": "echo \"OK!\"",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{ts,tsx}\""
+    "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
   }
 }
