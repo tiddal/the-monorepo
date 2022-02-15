@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"OK!\"",
-    "prepare": "husky install",
-    "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\""
+    "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "^7.0.4",
