@@ -13,6 +13,5 @@
     "module": "ESNext",
     "resolveJsonModule": true,
     "jsx": "preserve"
-  },
-  "include": ["src", "next-env.d.ts"]
+  }
 }
