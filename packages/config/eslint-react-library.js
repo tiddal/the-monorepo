@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb-typescript', './eslint-base'],
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:storybook/recommended',
+    './eslint-base',
+  ],
   rules: {
     'react/jsx-props-no-spreading': 0,
     'react/react-in-jsx-scope': 0,
