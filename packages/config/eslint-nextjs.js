@@ -1,18 +1,16 @@
 module.exports = {
-  env: {
-    browser: true,
-    node: true,
-  },
-  extends: ['./eslint-base', 'airbnb', 'airbnb-typescript', 'next'],
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:@next/next/recommended',
+    './eslint-base',
+  ],
   rules: {
-    'react/react-in-jsx-scope': 'off',
+    'react/react-in-jsx-scope': 0,
     'react/function-component-definition': [
       2,
-      {
-        namedComponents: 'arrow-function',
-      },
+      { namedComponents: 'arrow-function' },
     ],
-    '@next/next/no-html-link-for-pages': 'off',
   },
   overrides: [
     {
