@@ -3,6 +3,8 @@ node_modules
 
 # builds
 coverage
+storybook-static
+.next
 
 # debug
 
@@ -11,4 +13,3 @@ coverage
 # misc
 .DS_Store
 .turbo
-.next

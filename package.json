@@ -6,6 +6,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "test": "turbo run test",
+    "storybook": "turbo run storybook",
     "lint": "turbo run lint",
     "format": "pretty-quick --staged --pattern \"**/*.{ts,tsx}\"",
     "prepare": "husky install"
