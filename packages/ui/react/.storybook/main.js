@@ -10,4 +10,7 @@ module.exports = {
     '@storybook/addon-a11y',
   ],
   framework: '@storybook/react',
+  core: {
+    builder: 'webpack5',
+  },
 };
