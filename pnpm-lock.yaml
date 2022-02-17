@@ -166,6 +166,15 @@ importers:
       tsconfig: link:../../../tsconfig
       typescript: 4.5.5
 
+  packages/ui/web/styles:
+    specifiers:
+      '@stitches/core': ^1.2.6
+      tsconfig: workspace:*
+    dependencies:
+      '@stitches/core': 1.2.6
+    devDependencies:
+      tsconfig: link:../../../tsconfig
+
 packages:
 
   /@ampproject/remapping/2.1.1:
@@ -2288,6 +2297,10 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.3
     dev: true
+
+  /@stitches/core/1.2.6:
+    resolution: {integrity: sha512-nDGhYDZw74uL7D4FYwpya2Sgr1LucsdrF7Nr6Ut4jQD49sBK36S2eC2oCAlfAX0JksH0QVfOrWwUipp3uaID1w==}
+    dev: false
 
   /@storybook/addon-a11y/6.4.19_@types+react@17.0.39:
     resolution: {integrity: sha512-dG6easap6W4AqyggVZPq8lBrhza8StA8J4eYz/GVdoXINSGtq/casV0rkmY3+SUXhPYux5oGavHo86j5I4Q/0Q==}
