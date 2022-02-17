@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     'react/jsx-props-no-spreading': 0,
     'react/react-in-jsx-scope': 0,
+    'react/prop-types': 0,
     'react/function-component-definition': [
       2,
       { namedComponents: 'arrow-function' },

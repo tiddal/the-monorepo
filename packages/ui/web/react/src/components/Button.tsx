@@ -1,13 +1,21 @@
-import { HTMLAttributes, ReactNode } from 'react';
+import { styled } from '@stitches/react';
+import { ElementRef, forwardRef } from 'react';
+import { Button as ButtonCSS } from 'ui-styles';
 
-export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
-  children: ReactNode;
-};
+const StyledButton = styled('button', ButtonCSS);
 
-export const Button = ({ children, ...props }: ButtonProps) => (
-  <button type="button" {...props}>
-    {children}
-  </button>
+export type StyledComponentProps<
+  C extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<any>,
+> = Omit<React.ComponentProps<C>, 'css'>;
+
+export type ButtonProps = StyledComponentProps<typeof StyledButton>;
+
+export const Button = forwardRef<ElementRef<typeof StyledButton>, ButtonProps>(
+  ({ children, ...props }, forwardedRef) => (
+    <StyledButton ref={forwardedRef} {...props}>
+      {children}
+    </StyledButton>
+  ),
 );
 
 Button.displayName = 'Button';

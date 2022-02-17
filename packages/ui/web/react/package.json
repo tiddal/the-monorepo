@@ -10,7 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@storybook/react": "^6.4.19"
+    "@stitches/react": "^1.2.6",
+    "@storybook/react": "^6.4.19",
+    "ui-styles": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",

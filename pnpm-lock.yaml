@@ -32,11 +32,13 @@ importers:
       tsconfig: workspace:*
       typescript: ^4.5.5
       ui-react: workspace:*
+      ui-styles: workspace:*
     dependencies:
       next: 12.0.10_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       ui-react: link:../../packages/ui/web/react
+      ui-styles: link:../../packages/ui/web/styles
     devDependencies:
       '@testing-library/dom': 8.11.3
       '@testing-library/jest-dom': 5.16.2
@@ -130,6 +132,7 @@ importers:
   packages/ui/web/react:
     specifiers:
       '@babel/core': ^7.17.4
+      '@stitches/react': ^1.2.6
       '@storybook/addon-a11y': ^6.4.19
       '@storybook/addon-actions': ^6.4.19
       '@storybook/addon-essentials': ^6.4.19
@@ -146,8 +149,11 @@ importers:
       config: workspace:*
       tsconfig: workspace:*
       typescript: ^4.5.5
+      ui-styles: workspace:*
     dependencies:
+      '@stitches/react': 1.2.6
       '@storybook/react': 6.4.19_bd648d59ed6cfaf73939aa4ab0f07360
+      ui-styles: link:../styles
     devDependencies:
       '@babel/core': 7.17.4
       '@storybook/addon-a11y': 6.4.19_@types+react@17.0.39
@@ -2300,6 +2306,12 @@ packages:
 
   /@stitches/core/1.2.6:
     resolution: {integrity: sha512-nDGhYDZw74uL7D4FYwpya2Sgr1LucsdrF7Nr6Ut4jQD49sBK36S2eC2oCAlfAX0JksH0QVfOrWwUipp3uaID1w==}
+    dev: false
+
+  /@stitches/react/1.2.6:
+    resolution: {integrity: sha512-gRVITYj8W4jJmoiVxWDv72yCvd12VvtUUAnTzs07EqmtvGCVgKZu3Dx0x5KVCcb0b6tfgvvNH2L84YrzdM4Mag==}
+    peerDependencies:
+      react: '>= 16.3.0'
     dev: false
 
   /@storybook/addon-a11y/6.4.19_@types+react@17.0.39:

@@ -1,7 +1,7 @@
 import { createStitches, type ScaleValue } from '@stitches/core';
-import { spacing as space } from 'tokens/spacing';
+import { spacing as space } from './spacing';
 
-export const { css } = createStitches({
+export const { css, getCssText } = createStitches({
   theme: {
     colors: {
       gray500: 'hsl(206,10%,76%)',
