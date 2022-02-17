@@ -1,5 +1,6 @@
 import { css } from '../tokens';
 
 export const Button = css({
-  backgroundColor: '$blue500',
+  backgroundColor: '$red500',
+  padding: '$10',
 });

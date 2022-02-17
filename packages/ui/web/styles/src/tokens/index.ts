@@ -1,5 +1,5 @@
-import { createStitches, type ScaleValue } from '@stitches/core';
-import { spacing as space } from './spacing';
+import { createStitches, PropertyValue, ScaleValue } from '@stitches/core';
+import { spacing } from './spacing';
 
 export const { css, getCssText } = createStitches({
   theme: {
@@ -10,7 +10,7 @@ export const { css, getCssText } = createStitches({
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
     },
-    space,
+    space: { ...spacing },
     fontSizes: {},
     fonts: {},
     fontWeights: {},
@@ -25,24 +25,7 @@ export const { css, getCssText } = createStitches({
     zIndices: {},
     transitions: {},
   },
-  utils: {
-    mx: (value: ScaleValue<'space'>) => ({
-      marginLeft: value,
-      marginRight: value,
-    }),
-    my: (value: ScaleValue<'space'>) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
-    px: (value: ScaleValue<'space'>) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    py: (value: ScaleValue<'space'>) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-  },
+  utils: {},
   media: {
     bp1: '(min-width: 640px)',
     bp2: '(min-width: 768px)',
