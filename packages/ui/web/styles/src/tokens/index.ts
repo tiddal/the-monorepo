@@ -1,4 +1,4 @@
-import { createStitches, PropertyValue, ScaleValue } from '@stitches/core';
+import { createStitches } from '@stitches/react';
 import { spacing } from './spacing';
 
 export const { css, getCssText } = createStitches({

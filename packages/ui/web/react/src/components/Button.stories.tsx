@@ -5,8 +5,12 @@ const meta: Meta = {
   title: 'Button',
   component: Button,
   argTypes: {
+    color: {
+      options: ['violet', 'gray'],
+      control: { type: 'inline-radio' },
+    },
     children: {
-      defaultValue: 'Default',
+      defaultValue: 'Label',
     },
   },
 };

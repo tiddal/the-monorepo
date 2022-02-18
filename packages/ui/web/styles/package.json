@@ -5,7 +5,8 @@
   "types": "src",
   "private": true,
   "dependencies": {
-    "@stitches/core": "^1.2.6"
+    "@stitches/core": "^1.2.6",
+    "@stitches/react": "^1.2.6"
   },
   "devDependencies": {
     "tsconfig": "workspace:*"

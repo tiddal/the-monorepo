@@ -1,18 +1,15 @@
-import { styled, ComponentProps } from '@stitches/react';
-import { ElementRef, forwardRef } from 'react';
+import { styled } from '@stitches/react';
+import { forwardRef, ElementRef } from 'react';
 import { Button as ButtonCSS } from 'ui-styles';
+import { StyledProps } from '../utils';
 
 const StyledButton = styled('button', ButtonCSS);
 
-export type StyledComponentProps<
-  C extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<any>,
-> = Omit<ComponentProps<C>, 'css'>;
-
-export type ButtonProps = any;
+export type ButtonProps = StyledProps<typeof StyledButton>;
 
 export const Button = forwardRef<ElementRef<typeof StyledButton>, ButtonProps>(
-  ({ children, ...props }, forwardedRef) => (
-    <StyledButton ref={forwardedRef} {...props}>
+  ({ children, ...props }, ref) => (
+    <StyledButton ref={ref} {...props}>
       {children}
     </StyledButton>
   ),
