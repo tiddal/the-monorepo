@@ -1,5 +1,5 @@
-import { createStitches } from '@stitches/react';
-import { spacing } from './spacing';
+import { createStitches, ScaleValue } from '@stitches/core';
+import { spacing as space } from './spacing';
 
 export const { css, config } = createStitches({
   theme: {
@@ -10,9 +10,8 @@ export const { css, config } = createStitches({
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
     },
-    space: { ...spacing },
+    space,
   },
-  utils: {},
   media: {
     bp1: '(min-width: 640px)',
     bp2: '(min-width: 768px)',

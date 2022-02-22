@@ -1,2 +1,2 @@
 export { config } from './tokens';
-export { Button } from './components/Button';
+export { Button, type ButtonProps } from './components/Button';
