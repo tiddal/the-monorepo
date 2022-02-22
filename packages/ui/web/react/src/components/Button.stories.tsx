@@ -5,6 +5,21 @@ const meta: Meta = {
   title: 'Button',
   component: Button,
   argTypes: {
+    css: {
+      table: {
+        disable: true,
+      },
+    },
+    ref: {
+      table: {
+        disable: true,
+      },
+    },
+    size: {
+      table: {
+        disable: true,
+      },
+    },
     color: {
       options: ['violet', 'gray'],
       control: { type: 'inline-radio' },

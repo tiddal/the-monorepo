@@ -1,7 +1,10 @@
 {
   "extends": "tsconfig/react-library.json",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@emotion/core": ["node_modules/@emotion/react"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["dist", "build", "node_modules", "build-storybook"]
