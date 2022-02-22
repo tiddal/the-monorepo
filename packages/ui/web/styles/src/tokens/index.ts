@@ -1,15 +1,10 @@
 import { createStitches, ScaleValue } from '@stitches/core';
-import { spacing as space } from './spacing';
+import { colors } from './colors';
+import { space } from './space';
 
 export const { css, config } = createStitches({
   theme: {
-    colors: {
-      gray500: 'hsl(206,10%,76%)',
-      blue500: 'hsl(206,100%,50%)',
-      purple500: 'hsl(252,78%,60%)',
-      green500: 'hsl(148,60%,60%)',
-      red500: 'hsl(352,100%,62%)',
-    },
+    colors,
     space,
   },
   media: {
