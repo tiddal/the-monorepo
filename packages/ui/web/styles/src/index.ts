@@ -1,2 +1,2 @@
-export { getCssText } from './tokens';
+export { config } from './tokens';
 export { Button } from './components/Button';

@@ -1,7 +1,7 @@
 import { createStitches } from '@stitches/react';
 import { spacing } from './spacing';
 
-export const { css, getCssText } = createStitches({
+export const { css, config } = createStitches({
   theme: {
     colors: {
       gray500: 'hsl(206,10%,76%)',
@@ -11,19 +11,6 @@ export const { css, getCssText } = createStitches({
       red500: 'hsl(352,100%,62%)',
     },
     space: { ...spacing },
-    fontSizes: {},
-    fonts: {},
-    fontWeights: {},
-    lineHeights: {},
-    letterSpacings: {},
-    sizes: {},
-    borderWidths: {},
-    borderStyles: {},
-    radii: {},
-    opacity: {},
-    shadows: {},
-    zIndices: {},
-    transitions: {},
   },
   utils: {},
   media: {

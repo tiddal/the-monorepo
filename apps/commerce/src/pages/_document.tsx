@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { getCssText } from 'ui-react';
+import { getCssText } from 'stitches.config';
 
 const Document = () => (
   <Html>
