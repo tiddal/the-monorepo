@@ -20,10 +20,6 @@ const meta: Meta = {
         disable: true,
       },
     },
-    color: {
-      options: ['violet', 'gray'],
-      control: { type: 'inline-radio' },
-    },
     children: {
       defaultValue: 'Label',
     },
