@@ -7,6 +7,24 @@ export const { css, config } = createStitches({
     colors,
     space,
   },
+  utils: {
+    mx: (value: ScaleValue<'space'>) => ({
+      marginLeft: value,
+      marginRight: value,
+    }),
+    my: (value: ScaleValue<'space'>) => ({
+      marginTop: value,
+      marginBottom: value,
+    }),
+    px: (value: ScaleValue<'space'>) => ({
+      paddingLeft: value,
+      paddingRight: value,
+    }),
+    py: (value: ScaleValue<'space'>) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
+  },
   media: {
     bp1: '(min-width: 640px)',
     bp2: '(min-width: 768px)',

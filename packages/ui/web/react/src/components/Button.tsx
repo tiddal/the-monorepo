@@ -1,6 +1,6 @@
-import { styled } from '@stitches/react';
 import { ComponentPropsWithRef } from 'react';
 import { Button as ButtonCSS, ButtonProps as ButtonPropsCSS } from 'ui-styles';
+import { styled } from '../stitches.config';
 
 const StyledButton = styled('button', ButtonCSS);
 
